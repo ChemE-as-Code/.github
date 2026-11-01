@@ -39,7 +39,7 @@ decisions.
 
 ChemE-as-Code is developed by the [Process Intelligence Research](https://www.pi-research.org/)
 group at the Department of Chemical Engineering, Delft University of Technology, led by
-[Artur M. Schweidtmann](https://www.tudelft.nl/tnw/over-faculteit/afdelingen/chemical-engineering/principal-scientists/artur-schweidtmann).
+[Artur M. Schweidtmann](https://www.pi-research.org/author/artur-schweidtmann/).
 
 ## Contributors
 
@@ -49,7 +49,7 @@ group at the Department of Chemical Engineering, Delft University of Technology,
 | <img src="https://raw.githubusercontent.com/ChemE-as-Code/process-library/main/.github/readme/weber.jpg" alt="Jana M. Weber" width="50"> | Jana M. Weber | Process Atlas |
 | <img src="https://raw.githubusercontent.com/ChemE-as-Code/core/main/.github/readme/alimin.png" alt="Achmad A. Alimin" width="50"> | [Achmad A. Alimin (Angga)](https://www.pi-research.org/people/achmad-a-alimin/) | Safety and HAZOP; layout STL export |
 | <img src="https://raw.githubusercontent.com/ChemE-as-Code/core/main/.github/readme/rupprecht.jpg" alt="Sophia Rupprecht" width="50"> | [Sophia Rupprecht](https://www.pi-research.org/people/sophia-rupprecht/) | Inherited thermodynamic model selection, phase calculations, units and skills; design case study |
-| <img src="https://raw.githubusercontent.com/ChemE-as-Code/core/main/.github/readme/evanvoorbergen.png" alt="Elise" width="50"> | [Elise](https://github.com/evanvoorbergen) | Inherited reaction identification, kinetics retrieval, filtering and unit conversion |
+| <img src="https://raw.githubusercontent.com/ChemE-as-Code/core/main/.github/readme/evanvoorbergen.png" alt="Placeholder image for Elise" width="50"> | [Elise](https://github.com/evanvoorbergen) | Inherited reaction identification, kinetics retrieval, filtering and unit conversion |
 
 ## Status and license
 
