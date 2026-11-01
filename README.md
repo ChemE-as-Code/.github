@@ -10,7 +10,11 @@ This repository has neither name, so GitHub ignores it.
 
 ## To publish
 
-1. Edit the status line at the end of `profile/README.md` (release state, licence).
-2. Rename this repository to `.github` and make it public (Settings → General), or to
+1. Merge the contributor images into `core` and `process-library` and make both public: the
+   profile loads them from their `main` branches. Make `project-template` public too, since the
+   profile sends readers there; first remove "While cheme-as-code is private" from its README.
+2. Deploy the Process Atlas from `website`, with its DNS, so that
+   <https://atlas.cheme-as-code.org> resolves: the profile links to it.
+3. Rename this repository to `.github` and make it public (Settings → General), or to
    `.github-private` to show it to members only first.
-3. Paste the fields of `ORG-SETTINGS.md` into the organization's settings.
+4. Paste the fields of `ORG-SETTINGS.md` into the organization's settings.
