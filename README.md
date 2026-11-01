@@ -10,7 +10,8 @@ This repository has neither name, so GitHub ignores it.
 
 ## To publish
 
-1. Edit the status line at the end of `profile/README.md` (release state, licence).
+1. Merge the contributor images into `core` and `process-library` and make both public: the
+   profile loads them from their `main` branches.
 2. Rename this repository to `.github` and make it public (Settings → General), or to
    `.github-private` to show it to members only first.
 3. Paste the fields of `ORG-SETTINGS.md` into the organization's settings.
