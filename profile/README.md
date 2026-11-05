@@ -1,12 +1,32 @@
+<p align="center">
+  <a href="https://cheme-as-code.org"><img src="assets/banner.png" alt="ChemE-as-Code: chemical engineering as code. Process Intelligence Research, TU Delft" width="720"></a>
+</p>
+
+<p align="center">
+  <a href="https://cheme-as-code.org"><b>Website</b></a> ·
+  <a href="https://atlas.cheme-as-code.org"><b>Process Atlas</b></a> ·
+  <a href="https://docs.cheme-as-code.org"><b>Docs</b></a> ·
+  <a href="https://cheme-as-code.org/paper/cheme-as-code-preprint.pdf"><b>Paper (preprint)</b></a>
+</p>
+
 # ChemE-as-Code
 
-**Chemical plant design as code.** A process plant kept as plain files in a git repository:
-P&IDs in DEXPI 2.0.1, engineering lists in YAML, decisions in Markdown. Engineers and AI coding
-agents edit the same files, and every change is checked, reviewed and versioned like software.
+**An open-source platform for agentic AI in chemical engineering.** AI agents built on large
+language models carry out chemical engineering work, and engineers check it. A plant is kept as
+linked, machine-readable engineering files in git: P&IDs in DEXPI 2.0.1, engineering lists in
+YAML, decisions in Markdown. Calculation tools, from catalysis through process simulation to plant
+layout, HAZOP and life cycle assessment, run outside the language model; each value records where
+it came from, and automated checks report inconsistencies and out-of-date results by file and line.
 
-The example designs in the [Process Atlas](https://atlas.cheme-as-code.org) were produced by AI
-agents under human direction and are not approved for construction, operation or safety
-decisions.
+<p align="center">
+  <img src="assets/ammonia-plant-3d.jpg" alt="3D layout of a natural-gas ammonia plant, generated from its engineering files" width="720"><br>
+  <sub>The ammonia case study of the paper: agents developed a written task into a preliminary
+  basic-engineering package. The 3D layout is generated from the plant's engineering files.</sub>
+</p>
+
+The designs in the [Process Atlas](https://atlas.cheme-as-code.org) were produced by AI agents
+under human direction. They are research output, not engineering advice, and not approved for
+construction, operation or safety decisions.
 
 ## What you can do with it
 
@@ -26,7 +46,8 @@ decisions.
 |---|---|
 | [`core`](https://github.com/ChemE-as-Code/core) | the `cheme` command-line tool, the skills for AI agents and the web Viewer (`viewer/`) |
 | [`project-template`](https://github.com/ChemE-as-Code/project-template) | an empty plant: press **Use this template** to start one |
-| [`process-library`](https://github.com/ChemE-as-Code/process-library) | example plant designs, one folder per process, e.g. an air separation unit |
+| [`process-library`](https://github.com/ChemE-as-Code/process-library) | about 50 plant designs, one folder per process, and the life cycle inventories of the Process Atlas |
+| [`website`](https://github.com/ChemE-as-Code/website) | cheme-as-code.org, the Process Atlas and the documentation site |
 
 ## Getting started
 
@@ -34,6 +55,12 @@ decisions.
 2. Start a plant: **Use this template** on [`project-template`](https://github.com/ChemE-as-Code/project-template),
    or `cheme init my-plant`.
 3. Work in it with your editor or a coding agent; run `cheme validate` after every change.
+
+## The paper
+
+Artur M. Schweidtmann. *ChemE-as-Code: An Open-Source Platform for Agentic AI in Chemical
+Engineering.* Preprint, submitted to AIChE Journal, November 2026.
+[Download the PDF](https://cheme-as-code.org/paper/cheme-as-code-preprint.pdf).
 
 ## Who we are
 
@@ -45,15 +72,15 @@ group at the Department of Chemical Engineering, Delft University of Technology,
 
 | | Name | Role |
 |---|---|---|
-| <img src="https://raw.githubusercontent.com/ChemE-as-Code/core/main/.github/readme/schweidtmann.jpg" alt="Artur M. Schweidtmann" width="50"> | [Artur M. Schweidtmann](https://www.pi-research.org/author/artur-schweidtmann/) | ChemE-as-Code and Process Atlas (principal investigator) |
-| <img src="https://raw.githubusercontent.com/ChemE-as-Code/process-library/main/.github/readme/weber.jpg" alt="Jana M. Weber" width="50"> | Jana M. Weber | Process Atlas |
-| <img src="https://raw.githubusercontent.com/ChemE-as-Code/core/main/.github/readme/alimin.png" alt="Achmad A. Alimin" width="50"> | [Achmad A. Alimin (Angga)](https://www.pi-research.org/people/achmad-a-alimin/) | Safety and HAZOP; layout STL export |
-| <img src="https://raw.githubusercontent.com/ChemE-as-Code/core/main/.github/readme/rupprecht.jpg" alt="Sophia Rupprecht" width="50"> | [Sophia Rupprecht](https://www.pi-research.org/people/sophia-rupprecht/) | Inherited thermodynamic model selection, phase calculations, units and skills; design case study |
-| <img src="https://raw.githubusercontent.com/ChemE-as-Code/core/main/.github/readme/elise.jpg" alt="Elise van Voorbergen" width="50"> | [Elise van Voorbergen](https://www.pi-research.org/people/elise-van-voorbergen/) | Inherited reaction identification, kinetics retrieval, filtering and unit conversion |
+| <img src="assets/team/schweidtmann.jpg" alt="Artur M. Schweidtmann" width="50"> | [Artur M. Schweidtmann](https://www.pi-research.org/author/artur-schweidtmann/) | ChemE-as-Code and Process Atlas (principal investigator) |
+| <img src="assets/team/weber.jpg" alt="Jana M. Weber" width="50"> | Jana M. Weber | Process Atlas |
+| <img src="assets/team/alimin.png" alt="Achmad A. Alimin" width="50"> | [Achmad A. Alimin (Angga)](https://www.pi-research.org/people/achmad-a-alimin/) | Safety and HAZOP; layout STL export |
+| <img src="assets/team/rupprecht.jpg" alt="Sophia Rupprecht" width="50"> | [Sophia Rupprecht](https://www.pi-research.org/people/sophia-rupprecht/) | Inherited thermodynamic model selection, phase calculations, units and skills; design case study |
+| <img src="assets/team/elise.jpg" alt="Elise van Voorbergen" width="50"> | [Elise van Voorbergen](https://www.pi-research.org/people/elise-van-voorbergen/) | Inherited reaction identification, kinetics retrieval, filtering and unit conversion |
 
 ## Status and license
 
 Research preview: research output, not engineering advice. [`core`](https://github.com/ChemE-as-Code/core)
-is licensed under AGPL-3.0-or-later; the process data and designs in
-[`process-library`](https://github.com/ChemE-as-Code/process-library) under CC BY 4.0. Each
-repository states its full terms.
+and the code of [`process-library`](https://github.com/ChemE-as-Code/process-library) are licensed
+under AGPL-3.0-or-later (the library's small LCI installer under MIT); the process data and designs
+under CC BY 4.0. Each repository states its full terms.
