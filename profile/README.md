@@ -47,7 +47,6 @@ construction, operation or safety decisions.
 | [`core`](https://github.com/ChemE-as-Code/core) | the `cheme` command-line tool, the skills for AI agents and the web Viewer (`viewer/`) |
 | [`project-template`](https://github.com/ChemE-as-Code/project-template) | an empty plant: press **Use this template** to start one |
 | [`process-library`](https://github.com/ChemE-as-Code/process-library) | about 50 plant designs, one folder per process, and the life cycle inventories of the Process Atlas |
-| [`website`](https://github.com/ChemE-as-Code/website) | cheme-as-code.org, the Process Atlas and the documentation site |
 
 ## Getting started
 
